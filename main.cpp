@@ -2,19 +2,19 @@
 #include <string>
 
 int main() {
-    // Declare variables for personal information
-    std::string firstName = "John";
-    std::string lastName = "Doe";
-    std::string streetAddress = "1234 Elm Street";
-    std::string city = "Springfield";
-    std::string zipCode = "98765";
+    std::string string1, string2, result;
 
-    // Print the information to the console
-    std::cout << "First Name: " << firstName << std::endl;
-    std::cout << "Last Name: " << lastName << std::endl;
-    std::cout << "Street Address: " << streetAddress << std::endl;
-    std::cout << "City: " << city << std::endl;
-    std::cout << "Zip Code: " << zipCode << std::endl;
+    for (int i = 0; i < 3; ++i) {
+        std::cout << "Enter the first string: ";
+        std::getline(std::cin, string1);
+
+        std::cout << "Enter the second string: ";
+        std::getline(std::cin, string2);
+
+        result = string1 + " " + string2;
+
+        std::cout << "Concatenated string: " << result << std::endl << std::endl;
+    }
 
     return 0;
-} 
+}
